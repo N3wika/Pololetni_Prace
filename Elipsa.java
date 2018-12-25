@@ -12,8 +12,8 @@ public class Elipsa {
 
 
     public static void kresli( int a, int b ) {
-        for ( int y = -b; y <= b; y++ ) {
-            for ( int x = -a; x <= a; x++ ) {
+        for ( int y = -b; y <= b; ++y ) {
+            for ( int x = -a; x <= a; ++x ) {
                 if ( vElipse( a, b, x, y ) ) {
                     System.out.print( "X" );
                 } else {
